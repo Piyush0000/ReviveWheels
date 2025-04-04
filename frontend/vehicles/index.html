@@ -96,49 +96,32 @@
             font-style: italic;
         }
         
-        /* Header Styles */
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .auth-buttons {
-            display: flex;
-            gap: 10px;
-        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="header" id="header">
         <div class="logo-container">
-            <img src="./images/logoUpdated.png" alt="Logo" height="50" width="50">
-            <h3>Revive Wheels</h3>
+          <img src="./images/logoUpdated.png" alt="Logo" />
+          <h3>Revive Wheels</h3>
         </div>
-        
         <nav>
             <ul class="nav-links">
-                <li>Home</li>
-                <li>EV Conversion</li>
-                <li>Buy And Sell</li>
-                <li>Scrappage Network</li>
-            </ul>
+                <li><a href="../index.html" id="tab-style">Home</a></li>
+                <li><a href="../ev_coversion_ui.html" id="tab-style">EV Conversion</a></li>
+                <li class="active"><a href="../market.html" id="tab-style">Buy or Sell</a></li>
+                <li><a href="#" id="tab-style">Scrappage Network</a></li>
+            </ul>            
         </nav>
-        
         <div class="auth-buttons">
-            <button>Login</button>
-            <button>SignUp</button>
+          <button>
+            <a href="../signin.html" style="text-decoration: none; color: green;">Login</a>
+          </button>
+          <button style="background-color: green;">
+            <a href="../signup.html" style="text-decoration: none; color: white;">SignUp</a>
+          </button>
         </div>
-    </header>
+      </header>
     
     <!-- Main Content - Vehicle Marketplace -->
     <main>

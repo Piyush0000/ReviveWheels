@@ -8,14 +8,33 @@
   --danger-color: #dc3545;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow-x: hidden;
-  color: #333;
-  scroll-behavior: smooth;
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Animated Header */
+/* Button Styling */
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Header Styling */
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,6 +53,7 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo Container */
 .logo-container {
   display: flex;
   align-items: center;
@@ -49,6 +69,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 25px;
@@ -57,41 +78,51 @@ body {
   margin: 0;
 }
 
-.nav-links li{
+.nav-links li {
   cursor: pointer;
   padding: 5px 10px;
   position: relative;
-  transition: all 0.3s ease;
   font-weight: 500;
 }
 
-.nav-links li::after {
+/* Default Link Styling */
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Active Tab Styling */
+.nav-links .active {
+  font-weight: bold;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.nav-links .active a::after,.nav-links .active::after {
   content: "";
   position: absolute;
-  width: 0;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
   height: 2px;
   background-color: var(--primary-color);
-  bottom: 0;
-  left: 0;
-  transition: width 0.3s ease;
 }
 
-.nav-links li:hover::after,
-.nav-links li.active::after {
-  width: 100%;
-}
 
-.nav-links li:hover {
-  color: var(--primary-color);
-}
-
-.nav-links li.active {
-  color: var(--primary-color);
+/* Authentication Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
 }
 
 .auth-buttons button {
   padding: 10px 20px;
-  margin-left: 10px;
   border-radius: 30px;
   border: none;
   font-weight: 500;
@@ -121,6 +152,7 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
 }
+
 
 /* Hero Banner with Parallax */
 .conversion-banner {
@@ -830,15 +862,4 @@ body {
   height: 60px;
   object-fit: contain;
   margin-bottom: 10px;
-}
-
-#tab-style
-{
-  color: black;
-  text-decoration: none;
-}
-
-#tab-style:hover
-{
-  color: green;
 }
