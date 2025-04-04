@@ -13,15 +13,16 @@ body {
 }
 
 .navbar {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px wheat;
+  color: black;
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: white,
     url("https://images.unsplash.com/photo-1593941707882-a5bba53b0998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
-  color: white;
+  color: black;
   padding: 120px 0;
 }
 
