@@ -53,7 +53,9 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: var(--primary-color) !important; /* Force primary color on hover/active */
+  color: var(
+    --primary-color
+  ) !important; /* Force primary color on hover/active */
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -165,7 +167,7 @@ body {
 }
 
 #conversion h2:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -243,7 +245,7 @@ body {
 }
 
 #impact h2:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -289,7 +291,7 @@ footer h5 {
 }
 
 footer h5:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -328,11 +330,11 @@ footer i {
   .hero {
     padding: 80px 0;
   }
-  
+
   .hero h1 {
     font-size: 2.5rem;
   }
-  
+
   .navbar-collapse {
     background-color: white;
     padding: 1rem;
@@ -345,11 +347,11 @@ footer i {
   .stat-card {
     margin-bottom: 1.5rem;
   }
-  
+
   .process-step {
     padding-left: 30px;
   }
-  
+
   #conversion img {
     margin-top: 30px;
   }
