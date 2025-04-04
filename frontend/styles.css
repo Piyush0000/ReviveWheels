@@ -1,0 +1,86 @@
+:root {
+  --primary: #28a745;
+  --primary-dark: #218838;
+  --secondary: #17a2b8;
+  --dark: #343a40;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1593941707882-a5bba53b0998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+}
+
+.hero h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card {
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.process-step {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.process-step:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.btn-success {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+footer {
+  background: var(--dark);
+}
